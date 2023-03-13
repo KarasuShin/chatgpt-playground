@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .menu-item {
+    @apply text-slate-400 hover:bg-gray-600/20 rounded-md w-full transition cursor-pointer select-none p-3;
+  }
+
+  .menu-item.active {
+    @apply bg-gray-600/20;
+  }
+
+  .bg-theme {
+    @apply bg-white dark:bg-gray-800;
+  }
+}
+
+@layer base {
+  pre {
+    @apply p-2 rounded-md;
+  }
+}
